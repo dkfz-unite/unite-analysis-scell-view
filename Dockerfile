@@ -1,4 +1,5 @@
 FROM python:3.10-slim AS base
+EXPOSE 80
 ENV FILE_PATH=data.h5ad
 
 FROM base AS install
