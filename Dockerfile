@@ -7,4 +7,4 @@ RUN apt-get install -y build-essential
 RUN pip install cellxgene
 
 FROM install AS final
-ENTRYPOINT cellxgene launch --backed --disable-diffexp --disable-annotations --host 0.0.0.0 --title " " /data/${FILE_PATH}
+ENTRYPOINT cellxgene launch --backed --disable-diffexp --disable-annotations --host 0.0.0.0 --port 80 --title " " /data/${FILE_PATH}
